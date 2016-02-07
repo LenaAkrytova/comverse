@@ -162,7 +162,7 @@ header > img
 
 .desktop-menu
 {
-    display:block
+    display:inline-block;
 }
 .desktop-menu form
 {
