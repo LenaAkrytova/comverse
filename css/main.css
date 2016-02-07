@@ -169,10 +169,6 @@ header > img
     cursor: pointer;
 }
 
-.desktop-menu
-{
-    display:block
-}
 .desktop-menu form
 {
    margin-left: 30px;
@@ -301,15 +297,13 @@ menu button span
 .slide-element
 {
     display: none;
-    text-align: center;
-    padding-top: 3px;
-    color: #565656;
 }
 
 .slide-button:nth-of-type(1)
 {
     background-color: #3399CC;
 }
+
 
 .pinned
 {
@@ -795,7 +789,7 @@ menu button span
 
 .desktop-footer
 {
-    display: block;
+    display: none;
 }
 
 .footer a
@@ -956,4 +950,3 @@ footer hr
 {
     content: url('../img/socialMenuIcon-linkdin_hover.png');
 }
-
