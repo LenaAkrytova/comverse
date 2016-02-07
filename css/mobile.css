@@ -1,0 +1,285 @@
+.menu-mobile
+{
+    display: none;
+}
+
+.mobile-button
+{
+    background-color: #E5E5E5; 
+    border: solid 1px #D9D9D9;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 7px;
+
+}
+
+.hamburger-button
+{
+    content: url('../img/hamburger-icon.png');
+    position: absolute;
+    left: 0;
+    top:0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.mobile-search-button
+{
+    content: url('../img/searchBtnMobile.png');
+    position: absolute;
+    right: 0;
+    top:0;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.menu-mobile a
+{
+    color: #585951;
+    vertical-align: middle;
+}
+
+.menu-mobile li
+{
+    background-color: #B5B5B5;
+    border-bottom: solid 1px #DBDBDB;
+    height: 28px;   
+    padding: 5px;
+    
+}
+
+.menu-mobile li:before
+{
+    content: url('../img/navCollapseArrowRight.png');
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.menu-mobile li:hover
+{
+    background-image: none; 
+    background-color: #FCFCFC;
+}
+
+.menu-mobile a:hover
+{
+    color: #3399CC;        
+}    
+
+.menu-mobile ul
+{
+    display: none;
+    text-align: left;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.menu-mobile form input
+{
+    font-size: 19px;
+    line-height: 30px;
+    width: 100%;
+}
+
+input[type=checkbox]
+{
+    display: none;
+}
+
+.menu-mobile-chk:checked ~ ul
+{
+    display: block;
+}
+
+.mobile-footer
+{
+    display: none;
+    width: 100%;
+    padding-left: 0;
+    
+}
+
+.mobile-footer li
+{
+    text-align: left;
+    background-color: transparent;
+    border-bottom: solid 1px black;
+    padding: 5px;
+    padding-left: 10px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+.mobile-footer li:last-of-type
+{
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    height: 20px;
+}
+
+.mobile-footer a
+{
+    position: relative;
+    top: 5px;
+}
+
+.mobile-footer li:nth-of-type(1):hover,
+.mobile-footer li:nth-of-type(2):hover
+{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.mobile-footer form
+{
+    display: inline-block;
+    position: relative;
+    margin-left: 20px;
+    top: 4px;
+}
+
+.mobile-footer select
+{
+    color: white;
+    background-color: #666666;
+    border: none;
+    border-radius: 2px;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* 
+    Below are media code that allow switching to mobile menu
+    Thus we decide for user whether to present a mobile version of site based on user's display size.
+
+    We have 2 versions of media code, only the secodn switches to mobile.
+    */
+
+@media all and (max-width:991px)
+{
+    .promo > div
+    {
+        width: 100%;
+    }
+
+    .pinned
+    {
+        width: 28%;
+        margin-right: 10px;
+        font-size: 16px;
+        vertical-align: top;
+        padding-bottom: 10px;
+    }
+}
+
+@media all and (max-width:768px)
+{
+    /* Here we change the logo to be smaller*/
+    header img
+    {
+        content: url('../img/comverse-logo-medium.png');
+    }
+
+    /* Disable desktop elemnts - footer and menu */
+    .desktop-menu, .desktop-footer
+    {
+        display: none;
+    }
+
+    /* Enable corresponding mobile elements */
+    .menu-mobile, .mobile-footer
+    {
+        display: block;
+    }
+
+    /* Fix various view problems to make mobile browsing more smooth */
+    .bg-pink, .bg-green, .bg-orange
+    {
+        font-size: 16px;
+    }
+
+    .promo
+    {
+        padding-top: 0;
+    }
+
+    .top-wrap
+    {
+        background: url("../img/weDoBG.png");
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .top-wrap > h2,
+    .top-wrap > p,
+    .promo > div > a
+    {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .slide-cont
+    {
+        padding-left: 10px;
+    }
+
+    .slide-button
+    {
+        height: 30px;
+        width: 30px;
+    }
+
+    .slide-element
+    {
+        display: block;
+    }
+
+    .slide-button:nth-of-type(1) > .slide-num
+    {
+        color: white;
+    }
+
+    .pinned-list
+    {
+        padding: 0;
+    }
+
+    .pinned
+    {
+        position: relative;
+        font-size: 24px;
+        border-radius: 0;
+        width: 100%;
+        margin-top: 10px;
+        margin-right: 0px;
+        padding-left: 0; 
+        padding-right: 0;
+    }
+
+    .pinned::before
+    {
+        position: relative;
+        content: url('../img/promotion-item-arrow.png');
+        float: right;
+        top: 45px;
+        right: 15px;
+    }
+
+    .news-and-events ul
+    {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .news-event
+    {
+        width: 100%;
+        margin-left: 5%;
+        margin-left: 5%;
+    }
+}
