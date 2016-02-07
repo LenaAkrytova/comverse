@@ -910,23 +910,16 @@ footer hr
 .icon-youtube
 {
     content: url('../img/socialMenuIcon-youtube.png');
-    float: left;
-    margin: 5px;
-    margin-top: 10px;
 }
 
 .icon-youtube:hover
 {
     content: url('../img/socialMenuIcon-youtube_hover.png');
-
 }
 
 .icon-twitter
 {
     content: url('../img/socialMenuIcon-twitter.png');
-    float: left;
-    margin: 5px;
-    margin-top: 10px;
 }
 
 .icon-twitter:hover
@@ -937,15 +930,21 @@ footer hr
 .icon-in
 {
     content: url('../img/socialMenuIcon-linkdin.png');
-    float: left;
-    margin: 5px;
-    margin-top: 10px;
 }
-
 
 .icon-in:hover
 {
     content: url('../img/socialMenuIcon-linkdin_hover.png');
+}
+
+.icon-youtube,
+.icon-twitter,
+.icon-in
+{
+    float: left;
+    margin: 5px;
+    margin-top: 10px;
+    cursor:pointer;
 }
 
 
@@ -1111,7 +1110,7 @@ menu
     vertical-align: bottom;
 }
 
-/*
+
 .icon-in.mobile,
 .icon-youtube.mobile,
 .icon-twitter.mobile
@@ -1119,9 +1118,10 @@ menu
     position: relative;
     vertical-align: middle;
     margin-left: 10px;
-    top: 3px;
+    top: 0px;
+    margin-top:0;
 }
-*/
+
 
 
 /* 
