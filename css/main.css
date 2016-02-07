@@ -71,10 +71,17 @@ header
     left: 0;
 }
 
-header, menu
+header
 {
     background-color: white;
     display: inline-block;
+    vertical-align: bottom;
+}
+
+menu
+{
+    background-color: white;
+    display: none;
     vertical-align: bottom;
 }
 
