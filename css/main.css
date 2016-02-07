@@ -912,7 +912,7 @@ footer hr
     content: url('../img/socialMenuIcon-youtube.png');
     float: left;
     margin: 5px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .icon-youtube:hover
@@ -926,7 +926,7 @@ footer hr
     content: url('../img/socialMenuIcon-twitter.png');
     float: left;
     margin: 5px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .icon-twitter:hover
@@ -939,7 +939,7 @@ footer hr
     content: url('../img/socialMenuIcon-linkdin.png');
     float: left;
     margin: 5px;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 
